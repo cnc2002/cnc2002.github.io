@@ -1,0 +1,413 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>个人简历</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Microsoft YaHei", sans-serif;
+}
+body {
+background-color: #f3f4f6;
+padding: 40px 20px;
+}
+.resume-wrap {
+max-width: 1100px;
+margin: 0 auto;
+display: flex;
+background: #fff;
+box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+border-radius: 12px;
+overflow: hidden;
+}
+/* 左侧侧边栏 */
+.resume-left {
+width: 300px;
+background: linear-gradient(145deg, #254b9c, #1a3470);
+color: #fff;
+padding: 40px 25px;
+}
+.avatar-box {
+text-align: center;
+margin-bottom: 30px;
+}
+.avatar {
+width: 130px;
+height: 130px;
+border-radius: 50%;
+border: 4px solid rgba(255,255,255,0.3);
+object-fit: cover;
+background: #eee;
+display: inline-block;
+line-height: 130px;
+color: #254b9c;
+font-size: 32px;
+}
+.name {
+font-size: 26px;
+margin-top: 16px;
+font-weight: 600;
+}
+.job-title {
+font-size: 14px;
+opacity: 0.85;
+margin-top: 6px;
+letter-spacing: 1px;
+}
+.left-title {
+font-size: 16px;
+padding-bottom: 10px;
+margin: 35px 0 15px;
+border-bottom: 1px solid rgba(255,255,255,0.25);
+letter-spacing: 1px;
+}
+.contact-item {
+display: flex;
+align-items: center;
+margin-bottom: 14px;
+font-size: 14px;
+opacity: 0.92;
+}
+.contact-item i {
+width: 24px;
+margin-right: 10px;
+}
+.skill-item {
+margin-bottom: 16px;
+}
+.skill-name {
+font-size: 14px;
+margin-bottom: 6px;
+display: flex;
+justify-content: space-between;
+}
+.skill-bar-bg {
+width: 100%;
+height: 6px;
+background: rgba(255,255,255,0.2);
+border-radius: 3px;
+overflow: hidden;
+}
+.skill-bar {
+height: 100%;
+background: #fff;
+border-radius: 3px;
+}
+.self-desc {
+font-size: 14px;
+line-height: 1.7;
+opacity: 0.9;
+}
+    /* 右侧主体内容 */
+    .resume-right {
+        flex: 1;
+        padding: 40px 35px;
+        color: #222;
+    }
+    .section-title {
+        font-size: 20px;
+        color: #254b9c;
+        padding-bottom: 10px;
+        margin-bottom: 22px;
+        border-bottom: 2px solid #e6edf7;
+        display: flex;
+        align-items: center;
+    }
+    .section-title span {
+        display: inline-block;
+        width: 4px;
+        height: 20px;
+        background: #254b9c;
+        margin-right: 10px;
+    }
+    .timeline-item {
+        margin-bottom: 28px;
+        position: relative;
+        padding-left: 20px;
+    }
+    .timeline-item::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 6px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #254b9c;
+    }
+    .timeline-head {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+    }
+    .timeline-post {
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .timeline-time {
+        font-size: 14px;
+        color: #666;
+    }
+    .timeline-company {
+        font-size: 15px;
+        color: #444;
+        margin-bottom: 10px;
+    }
+    .timeline-text {
+        font-size: 14px;
+        line-height: 1.7;
+        color: #555;
+    }
+    .edu-list {
+        line-height: 1.8;
+        font-size: 14px;
+        color: #555;
+    }
+    .edu-list p {
+        margin-bottom: 8px;
+    }
+
+    /* 移动端适配 */
+    @media screen and (max-width: 768px) {
+        .resume-wrap {
+            flex-direction: column;
+        }
+        .resume-left {
+            width: 100%;
+        }
+        body {
+            padding: 10px;
+        }
+    }
+</style>
+
+</head>
+<body>
+<div class="resume-wrap">
+<!-- 左侧侧边栏 -->
+<div class="resume-left">
+<div class="avatar-box">
+
+    <img src="logo.jpg">
+
+<div class="name">程伟</div>
+<div class="job-title">中国联通广东省分公司 智算事业部总经理</div>
+</div>
+    <div class="left-title">联系方式</div>
+    <div class="contact-item">
+        <i>☎</i>
+        <span>微信：cnc2002 </span>
+    </div>
+    <div class="contact-item">
+        <i>✉</i>
+        <span>邮箱：cnc2002@hotmail.com</span>
+    </div>
+    <div class="contact-item">
+        <i>📍</i>
+        <span>地址：广东省广州市天河区黄埔大道西666号</span>
+    </div>
+    <div class="contact-item">
+        <i>🔗</i>
+        <span>链接：</span> <a href="https://orcid.org/0000-0003-3703-9622" style="color:#fff;"<span>ORCID</span></a>
+    </div>
+
+    
+    <div class="left-title">个人简介</div>
+    <p class="self-desc">
+         博士（清华大学计算机系毕业），正高级工程师，博士生导师。中国联通广东省分公司政企BG高级副总裁、智算事业部总经理、科创委主任委员，中国联通云计算首席专家。IEEE PES电力系统通信与网络安全技术委员会（中国）电碳算协同技术分委会副主席、数字广东建设专家委员会专家。
+    </p>
+        <br>
+    <p class="self-desc">
+       研究方向涉及云计算、智算、算力网络及数据中心等领域。近年来发表人工智能/算力领域SCI论文6篇、专著1部、授权发明专利30余项，获得省部级科技奖5次，参与国家标准2项、国家重点研发计划1项。
+    </p>
+        <br>
+    <p class="self-desc">
+         Wei Cheng is currently a GM of Intelligent Computing Power Business Division ,China Unicom Guangdong Branch. He received Ph.D. degree from Tsinghua University , Master degree from BUPT, and Bachelor degree from Nanjing University. His research intrests include Cloud Computing, Intelligent Computing, Computing Power Network, and IDC. 
+    </p>
+    
+</div>
+
+<!-- 右侧主体内容 -->
+<div class="resume-right">
+    <div class="section-title">
+        <span></span>工作经历
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-head">
+            <div class="timeline-post">中国联通广东省分公司</div>
+            <div class="timeline-time">2024.03 - 至今</div>
+        </div>
+        <div class="timeline-company">总经理 | 智算事业部</div>
+        <div class="timeline-text">
+
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-head">
+            <div class="timeline-post">联通（广东）产业互联网有限公司</div>
+            <div class="timeline-time">2018.01 - 2024.03</div>
+        </div>
+        <div class="timeline-company">副总经理</div>
+        <div class="timeline-text">
+
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-head">
+            <div class="timeline-post">中国联通广东省分公司</div>
+            <div class="timeline-time">2014.05 - 2017.12</div>
+        </div>
+        <div class="timeline-company">副总经理 | 系统集成中心</div>
+        <div class="timeline-text">
+
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-head">
+            <div class="timeline-post">中国联通河源市分公司</div>
+            <div class="timeline-time">2009.09 - 2014.04</div>
+        </div>
+        <div class="timeline-company">副总经理</div>
+        <div class="timeline-text">
+
+        </div>
+    </div>
+
+    
+    <div class="section-title">
+        <span></span>研发项目
+    </div>
+    <div class="timeline-item">
+        <div class="timeline-head">
+            <div class="timeline-post">工信部算力强基揭榜挂帅：异构算力跨域任务编排系统</div>
+            <div class="timeline-time">2025.07 - 2027.06</div>
+        </div>
+        <div class="timeline-text">
+            项目负责人。聚焦国产算力适配、跨域调度与绿色网络三大方向。
+        </div>
+    </div>
+    
+    <div class="timeline-item">
+        <div class="timeline-head">
+            <div class="timeline-post">国家人工智能应用中试基地（消费领域AI终端方向）</div>
+            <div class="timeline-time">2025.10 - 2027.12</div>
+        </div>
+        <div class="timeline-text">
+            算力小组负责人。参与基地技术规划与建设方案制定，推动AI算力基础设施与终端应用场景的深度融合，助力消费级AI产品的规模化落地。
+        </div>
+        
+    </div>
+
+ <div class="timeline-item">
+        <div class="timeline-head">
+            <div class="timeline-post">基于星罗的粤港澳大湾区异构算力任务编排协同系统研究及应用</div>
+            <div class="timeline-time">2025.07 - 2026.12</div>
+        </div>
+        <div class="timeline-text">
+            项目负责人。构建基于"星罗"算力平台的跨域任务编排系统，实现异构算力资源的统一纳管与智能调度，为粤港澳大湾区数字经济发展提供底层技术支撑。
+        </div>
+        
+    </div>
+    
+ <div class="timeline-item">
+        <div class="timeline-head">
+            <div class="timeline-post">支撑算力网的超宽带光通信技术研究与试验验证课题5（2024YFB29NL00105）</div>
+            <div class="timeline-time">2024.07 - 2027.06</div>
+        </div>
+        <div class="timeline-text">
+            国家重点研发计划 “多模态网络与通信”，部署深圳到广州的高速算网连接，端口速率不低于10X100Gbps。
+        </div>
+        
+    </div>
+
+
+ <div class="section-title">
+        <span></span>获奖项目
+    </div>
+    <div class="timeline-item">
+        <div class="timeline-head">
+            <div class="timeline-post">超大规模云数据中心跨层资源管理关键技术及应用</div>
+            <div class="timeline-time">2026.06</div>
+        </div>
+        <div class="timeline-text">
+            2025年广东省科技进步奖二等奖
+        </div>
+    </div>
+    
+    <div class="timeline-item">
+        <div class="timeline-head">
+            <div class="timeline-post">多物理场融合通信与智能组网关键技术及应用</div>
+            <div class="timeline-time">2026.06</div>
+        </div>
+        <div class="timeline-text">
+            2025年北京市科技进步奖一等奖
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-head">
+            <div class="timeline-post">面向异构算力的大湾区算网融合关键技术研究与应用</div>
+            <div class="timeline-time">2024.11</div>
+        </div>
+        <div class="timeline-text">
+            2024年中国通信学会科学技术奖二等奖
+        </div>
+    </div>
+
+ <div class="section-title">
+        <span></span>参与标准
+    </div>
+    <div class="timeline-item">
+        <div class="timeline-head">
+            <div class="timeline-post"> 网络安全技术 人工智能计算平台安全框架（GB/T45958-2025）</div>
+            <div class="timeline-time">2025.08</div>
+        </div>
+        <div class="timeline-text">
+            国家标准
+        </div>
+    </div>
+    
+    <div class="timeline-item">
+        <div class="timeline-head">
+            <div class="timeline-post">智算中心设计规范（T/GYJS 011—2025） </div>
+            <div class="timeline-time">2025.11</div>
+        </div>
+        <div class="timeline-text">
+            团体标准
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-head">
+            <div class="timeline-post">人工智能算力资源池技术规范（T/STSI 43-2023） </div>
+            <div class="timeline-time">2023.11</div>
+        </div>
+        <div class="timeline-text">
+            团体标准
+        </div>
+    </div>
+    
+    <div class="timeline-item">
+        <div class="timeline-head">
+            <div class="timeline-post">模块化数据中心通用规范（GB/T41783-2022）</div>
+            <div class="timeline-time">2022.10</div>
+        </div>
+        <div class="timeline-text">
+            国家标准
+        </div>
+    </div>    
+    
+</div>
+
+</div>
+</body>
+</html>
